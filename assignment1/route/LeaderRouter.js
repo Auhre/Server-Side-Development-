@@ -32,7 +32,7 @@ leaderRouter.route('/:leaderId')
 })
 .post((req, res, next) => {
     res.statusCode = 403
-    res.end('POST operation not supported in /promotions/' + req.params.leaderId)
+    res.end('POST operation not supported in /leaders/' + req.params.leaderId)
 })
 .put((req, res, next) => {
     res.write('Updating promotion with Id number of ' + req.params.leaderId + '\n')
