@@ -32,15 +32,15 @@ leaderRouter.route('/:leaderId')
 })
 .post((req, res, next) => {
     res.statusCode = 403
-    res.end('POST operation not supported in /promotions/' + req.params.leaderId)
+    res.end('POST operation not supported in /leaders/' + req.params.leaderId)
 })
 .put((req, res, next) => {
-    res.write('Updating promotion with Id number of ' + req.params.leaderId + '\n')
-    res.end('Will update the promo with id of ' + req.params.leaderId + ' with a name of '
+    res.write('Updating leader with Id number of ' + req.params.leaderId + '\n')
+    res.end('Will update the leader roles with id of ' + req.params.leaderId + ' with a name of '
         + req.body.leaderName + ' and with description of ' + req.body.leaderDescription)
 })
 .delete((req, res, next) => {
-    res.end('Deleting promotion with Id of ' + req.params.leaderId)
+    res.end('Deleting leader role with Id of ' + req.params.leaderId)
 })
 
 module.exports = leaderRouter
