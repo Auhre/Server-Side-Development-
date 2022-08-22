@@ -25,7 +25,6 @@ promoRouter.route('/')
         res.statusCode = 200
         res.setHeader('Content-type', 'application/json')
         res.json(promo)
-        console.log('Yes')
     }, (err) => next(err))
     .catch((err) => {
         console.log(err)
