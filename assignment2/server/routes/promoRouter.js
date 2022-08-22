@@ -21,7 +21,7 @@ promoRouter.route('/')
     
     Promos.create(req.body)
     .then((promo) => {
-        console.log('Dish created ', dish)
+        console.log('Promo created ', promo)
         res.statusCode = 200
         res.setHeader('Content-type', 'application/json')
         res.json(promo)
