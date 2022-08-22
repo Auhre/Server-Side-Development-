@@ -34,7 +34,7 @@ promoRouter.route('/')
 .put((req, res, next) => {
     
     res.statusCode = 403
-    res.end('PUT operation not suppported on /dishes')
+    res.end('PUT operation not suppported on /promos')
 
 })
 .delete((req, res, next) => {
