@@ -11,6 +11,7 @@ var usersRouter = require('./routes/users');
 const leaderRouter = require('./routes/leaderRouter')
 const promoRouter = require('./routes/promoRouter')
 const Promos = require('./models/promos');
+const Leaders = require('./models/leaders')
 
 const url = 'mongodb+srv://auhre:satoro421@cluster0.at33pp6.mongodb.net/test'
 const connect = mongoose.connect(url)
@@ -19,14 +20,6 @@ connect.then(() => {
   console.log('Succesfully Connected to the Server')
 
 //
-  Promos.remove({
-  })
-  .then(() => {
-    console.log('Removed all')
-  })
-  .catch(() => {
-    console.log(err)
-  })
 //
 
 }).catch((err) => {
